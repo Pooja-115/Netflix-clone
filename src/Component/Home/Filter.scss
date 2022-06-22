@@ -1,0 +1,55 @@
+:root {
+  body {
+    background-color: transparent !important;
+
+    background-color: #000;
+    --red: #e50914;
+    --black: #000;
+    --white: #fff;
+    .fa {
+      color: var(--white);
+    }
+  }
+  .styless {
+    margin-top: -63px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.404);
+    margin-bottom: 15px;
+    display: block;
+
+    .filterclass {
+      display: flex;
+      justify-content: space-evenly;
+      a {
+        color: #fff !important;
+        padding: 20px 15px;
+        display: block;
+        font-size: 1rem;
+        text-align: center;
+        border-bottom: 2px solid transparent !important;
+      }
+      a.active {
+        border-bottom: 2px solid #e50914 !important;
+        text-decoration: none;
+        display: block;
+      }
+    }
+  }
+  .Filter_wrapper {
+    margin-top: 50px;
+  }
+}
+@media only screen and(min-width: 1360px) {
+  .filterclass {
+    display: flex;
+    justify-content: space-evenly;
+    a {
+      min-width: 200px;
+    }
+  }
+}
+@media only screen and(max-width:992px) {
+  html {
+    font-size: 10px;
+  }
+}

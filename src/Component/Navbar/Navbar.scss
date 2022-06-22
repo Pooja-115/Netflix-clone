@@ -1,0 +1,46 @@
+:root {
+  body {
+    background-color: transparent !important;
+  }
+  background-color: #000;
+  --red: #e50914;
+  --black: #000;
+  --white: #fff;
+  .fa {
+    color: var(--white);
+  }
+  .navbar {
+    background-color: rgba(0, 0, 0, 0) !important;
+    z-index: 999;
+    .nav-link {
+      color: var(--white) !important;
+      border: 1px solid rgba(255, 255, 255, 0.616);
+      border-radius: 5px;
+      margin-right: 15px;
+      font-size: 1rem;
+    }
+    .dropdown-menu {
+      background-color: #393940d7;
+      .dropdown-item {
+        color: #fff;
+        font-size: 0.8rem;
+        &:hover {
+          background-color: #28282c;
+        }
+      }
+    }
+  }
+  .search-btn {
+    background-color: var(--red) !important;
+    border-color: var(--red) !important;
+    color: var(--white);
+    font-size: 1rem;
+    &:focus,
+    &:hover {
+      background-color: var(--red) !important;
+      border-color: var(--red) !important;
+      box-shadow: 0 0 6px #0000004d;
+      color: var(--white);
+    }
+  }
+}

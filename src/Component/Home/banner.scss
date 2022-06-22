@@ -1,0 +1,105 @@
+:root {
+  body {
+    background-color: transparent !important;
+  }
+  background-color: #000;
+  --red: #e50914;
+  --black: #000;
+  --white: #fff;
+  .fa {
+    color: var(--white);
+  }
+
+  .sliderWrapper {
+    position: absolute;
+    top: 0;
+    // z-index: -1;
+    width: 100%;
+    .banner-wrapper {
+      a {
+        text-decoration: none;
+      }
+      .overlay-detail {
+        height: 100%;
+        .movie-detail {
+          ul {
+            padding-left: 0;
+            display: flex;
+            li {
+              color: var(--white);
+
+              &:first-child {
+                &::marker {
+                  content: none;
+                }
+              }
+              span {
+                margin-right: 40px;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+        // title
+        .movie-title {
+          .movie-name {
+            color: var(--white);
+            font-size: 1.8rem;
+            letter-spacing: 13px;
+            display: block;
+            font-weight: 400;
+            font-family: "segoe UI";
+            margin: 20px 0;
+          }
+          .movie-overview {
+            width: 70%;
+            font-size: 0.96rem;
+            color: #fff;
+            line-height: 1.6rem;
+          }
+        }
+        //BUTTONS
+        .banner_buttons {
+          margin-top: 30px;
+          .btn {
+            color: #fff;
+            font-size: 0.8rem;
+            border-radius: 20px;
+            padding: 10px 30px;
+            transition: 0.7s;
+            cursor: pointer;
+
+            .fa {
+              font-size: 0.8rem;
+              margin-right: 7px;
+              color: #ffffffdd;
+            }
+          }
+          .btn-watch {
+            margin-right: 15px;
+            background-color: var(--red);
+            box-shadow: 0px 3px 10px #c00811;
+            &:hover {
+              background-color: #ff000d;
+            }
+          }
+          .btn-addList {
+            background-color: #2c2c2cc4;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.367);
+            &:hover {
+              background-color: rgb(102, 102, 102);
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and(max-width: 576px) {
+    html {
+      font-size: 10px;
+    }
+    .movie-overview {
+      width: 100% !important;
+    }
+  }
+}
