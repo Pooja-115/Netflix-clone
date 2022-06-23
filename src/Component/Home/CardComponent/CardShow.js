@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Card from 'react-bootstrap/Card'
 import CardStyle from './cardStyle.scss'
+import 'font-awesome/css/font-awesome.min.css'
 
 export default function CardShow () {
   const [data, SetData] = useState('')
@@ -25,8 +26,11 @@ export default function CardShow () {
               />
 
               <a href='#' className='card-play-btn btn'>
-                <i class='fa fa-play mr-3' aria-hidden='true'></i>
+                <i class='fa fa-play ' aria-hidden='true'></i>
               </a>
+              <div className='card-detao'>
+                <i className='fa fa-star'></i>
+              </div>
             </Card>
           )
         )

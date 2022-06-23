@@ -13,7 +13,7 @@
     position: relative;
     &:hover {
       transform: scale(1.3);
-
+      background-color: rgba(99, 99, 99, 0.257);
       z-index: 9;
       .card-play-btn {
         transition: all 0.7s;
@@ -25,6 +25,7 @@
     }
     img {
       border-radius: 5px;
+      height: 100%;
     }
     .card-play-btn {
       transition: all 0.7s;
